@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1b5f0c;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 800px;
+  height: 300px;
+}
+
+.form-hidden {
+  display: none;
+}
+
+.form__label {
+  font-size: 50px;
+  color: #ffff;
+}
+
+.form__input {
+  width: 30%;
+  height: 20%;
+  text-align: center;
+  font-size: 38px;
+}
+
+.form__button {
+  padding: 20px 40px;
+  font-size: 25px;
+  color: black;
+  background-color: #ffff;
+  border: currentColor;
+}
+
+.form__button:hover {
+  background-color: #a9a9a9;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.form__button:active {
+  background-color: #ffff;
+  transition: background-color 0.1s ease-in-out;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.card {
+  margin-bottom: 30px;
+  border-radius: 10px;
+  width: 22%;
+  height: 260px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.button-try {
+  display: none;
+  padding: 20px 40px;
+  font-size: 20px;
+  color: black;
+  background-color: #ffff;
+  border: currentColor;
+}
+
+.button-try-active {
+  display: block;
+}
+
+.button-try:hover {
+  background-color: #a9a9a9;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button-try:active {
+  background-color: #ffff;
+  transition: background-color 0.1s ease-in-out;
+}
+
+.shirt-card {
+  background-image: url(../img/shirt.jpg);
+}
+
+/* .two-сlubs {
+  background-image: url(../img/2-сlubs.png);
+}
+
+.two-diamonds {
+  background-image: url(../img/2-diamonds.png);
+}
+
+.two-hearts {
+  background-image: url(../img/2-hearts.png);
+}
+
+.two-spades {
+  background-image: url(../img/2-spades.png);
+}
+
+.three-clubs {
+  background-image: url(../img/3-clubs.png);
+}
+
+.three-diamonds {
+  background-image: url(../img/3-diamonds.png);
+}
+
+.three-hearts {
+  background-image: url(../img/3-hearts.png);
+}
+
+.three-spades {
+  background-image: url(../img/3-spades.png);
+}
+
+.four-clubs {
+  background-image: url(../img/4-clubs.png);
+}
+
+.four-diamonds {
+  background-image: url(../img/4-diamonds.png);
+} */
+
+.is-open[data-cards-id='two-сlubs'] {
+  background-image: url(../img/2-сlubs.png);
+}
+
+.is-open[data-cards-id='two-diamonds'] {
+  background-image: url(../img/2-diamonds.png);
+}
+
+.is-open[data-cards-id='two-hearts'] {
+  background-image: url(../img/2-hearts.png);
+}
+
+.is-open[data-cards-id='two-spades'] {
+  background-image: url(../img/2-spades.png);
+}
+
+.is-open[data-cards-id='three-clubs'] {
+  background-image: url(../img/3-clubs.png);
+}
+
+.is-open[data-cards-id='three-diamonds'] {
+  background-image: url(../img/3-diamonds.png);
+}
+
+.is-open[data-cards-id='three-hearts'] {
+  background-image: url(../img/3-hearts.png);
+}
+
+.is-open[data-cards-id='three-spades'] {
+  background-image: url(../img/3-spades.png);
+}
+
+.is-open[data-cards-id='four-clubs'] {
+  background-image: url(../img/4-clubs.png);
+}
+
+.is-open[data-cards-id='four-diamonds'] {
+  background-image: url(../img/4-diamonds.png);
+}
