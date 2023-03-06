@@ -1,43 +1,33 @@
 (() => {
   const arrayOfPairs = [
     {
-      cardName: 'two-сlubs',
       cardAttribute: 'two-сlubs'
     },
     {
-      cardName: 'two-diamonds',
       cardAttribute: 'two-diamonds'
     },
     {
-      cardName: 'two-hearts',
       cardAttribute: 'two-hearts'
     },
     {
-      cardName: 'two-spades',
       cardAttribute: 'two-spades'
     },
     {
-      cardName: 'three-clubs',
       cardAttribute: 'three-clubs'
     },
     {
-      cardName: 'three-diamonds',
       cardAttribute: 'three-diamonds'
     },
     {
-      cardName: 'three-hearts',
       cardAttribute: 'three-hearts'
     },
     {
-      cardName: 'three-spades',
       cardAttribute: 'three-spades'
     },
     {
-      cardName: 'four-clubs',
       cardAttribute: 'four-clubs'
     },
     {
-      cardName: 'four-diamonds',
       cardAttribute: 'four-diamonds'
     }
   ];
@@ -64,19 +54,6 @@
   function clearField() {
     const container = document.querySelector('.container');
     container.innerHTML = '';
-  }
-
-  //получаем информацию об открытой карте
-  function getCardInformation(card) {
-    const targetDataId = card.dataset.cardsId;
-    const targetItem = randomSelectedCards.find((item) => {
-      return item.cardAttribute === targetDataId;
-    });
-    const targetClassName = targetItem.cardName;
-    return {
-      targetClassName,
-      targetDataId
-    };
   }
 
   //проверка открытых карт
